@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Btn flottant gauche petit menu-->
+    <div class="btn-rond-menu">
+        <div class="cont-ligne">
+            <div class="ligne-unique">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigation verticale-->
+    <nav class="nav-gauche">
+        <div class="blocs-menu">
+            <div class="cercle-portrait">
+                <img src="ressources/photo.jpg" alt="portrait img">
+            </div>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#accueil">
+                    Accueil
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#pres">
+                    Présentation
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#port">
+                    Portfolio
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#range">
+                    Compétences
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#exp">
+                    Expériences
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="#contact">
+                    Contact
+                </a>
+            </span>
+        </div>
+
+
+
+        <div class="blocs-menu">
+            <div class="logo-cercle">
+                <a href="#">
+                    <img src="ressources/contact.svg" alt="logo contact">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Section Accueil-->
+
+    <section class="accueil" id="accueil">
+        <h1>Binevenue sur mon portfolio</h1>
+        <p class="txt-animation"></p>
+        <a href="#port" class="btn-acc btn-acc1">Portfolio</a>
+        <a href="#exp" class="btn-acc btn-acc2">Expériences</a>
+        <a href="ressources/cv.pdf" class="btn-acc btn-acc3">Télécharger CV</a>
+
+        <div class="medias">
+            <a href="https:github.com">
+                <div class="media media1">
+                    <img src="ressources/github.svg" alt="github icone" class="icone-medias">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/feed/">
+                <div class="media media2">
+                    <img src="ressources/linkedin.svg" alt="linkdin icone" class="icone-medias">
+                </div>
+            </a>
+            <a href="https:twitter.com">
+                <div class="media media3">
+                    <img src="ressources/twitter.svg" alt="twitter icone" class="icone-medias">
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="btn-rond">
+                    <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <section class="presentation" id="pres">
+
+        <h2 class="titre-pres">Présentation</h2>
+
+            <div class="container-presentation">
+
+                <div class="fond-forme"></div>
+
+                    <div class="pres-gauche">
+                    <h3>Développeur Web & Web Mobile</h3>
+                    <hr>
+                    <p>A la suite d'une reconversion professionelle, j'ai obtenu mon diplome de développeur Web et Web Mobile
+                        (équivalent Bac + 2).</p>
+                    <br>
+                    <p>
+                        Mon projet de fin de formation m'a conforté dans mon désir de m'orienter vers le CMS Symfony,
+                        je vais donc continuer à me former activement sur le sujet en suivant un cursus d'un CDA 
+                        ( Concepteur Développeur d'Application) espérant trouver un contrat en altérnance.
+                    </p>
+                    </div>
+                
+                <div class="pres-droite">
+                    <ul class="liste-presentation">
+                    <li class="item-liste i1">
+                        <span class="chiffre-style">1.</span>
+                        <p class="txt-liste">Maquettage - Wireframing</p>
+                    </li>
+                    <li class="item-liste i2">
+                        <span class="chiffre-style">2.</span>
+                        <p class="txt-liste">Développeur Front-End</p>
+                    </li>
+                    <li class="item-liste i3">
+                        <span class="chiffre-style">3.</span>
+                        <p class="txt-liste">Développeur Back-end</p>
+                    </li>
+                    </ul>
+                </div>
+        
+            </div>
+
+    </section>
+<!-- Section Portfolio -->
+
+<section class="portfolio" id="port">
+
+
+    <h2 class="titre-port">Mon Portfolio</h2>
+
+    <div class="cont-portfolio">
+
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/bootstrap.jpg" alt="img portfolio">
+            </div>
+            <h3>Maquettage d'un projet</h3>
+            <p>Maquettage d'une interface site-web en utilisant le Bootstrap.</p>
+            <a href="https://bootstrap-portfolio-mk.netlify.app/" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/js-jq.jpg" alt="img logo javascript">
+            </div>
+            <h3>Mon tambour en Js & Jquery</h3>
+            <p>J'ai terminé ce projet plus tôt dans ma phase d'apprentissage JavaScript.</p>
+            <a href="https://drum-js-jq-mk.netlify.app/" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+        <div class="item vague1">
+            <div class="cont-img-port">
+                <img src="ressources/react.jpg" alt="img logo react">
+            </div>
+            <h3>Mon Portfolio en React.Js</h3>
+            <p>au cours de ma formation j'ai développé ce portfolio en  React.js </p>
+            <a href="https://mkharbech-dev.netlify.app/" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+
+        <div class="item vague2">
+            <div class="cont-img-port">
+                <img src="ressources/html-css-js.jpg" alt="img logo html & css">
+            </div>
+            <h3>Mon Portfolio en HTML, CSS, JS</h3>
+            <p>Afin d'améliorer mon niveau de CSS et JS, j'ai développé mon officiel portfolio </p>
+            <a href="" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+
+        <div class="item vague2">
+            <div class="cont-img-port">
+                <img src="ressources/symfony.jpg" alt="img symfony">
+            </div>
+            <h3>Projet à venir</h3>
+            <p>site en cours de développement</p>
+            <a href="#" class="btn-projets">Découvrez le projet</a>
+        </div>
+
+
+        <div class="item vague2">
+            <div class="cont-img-port">
+                <img src="ressources/symfony2.jpg" alt="img logo symfony">
+            </div>
+            <h3>Projet à venir</h3>
+            <p>site en cours de développement</p>
+            <a href="#" class="btn-projets">Découvrez le projet</a>
+        </div>
+    </div>
+</section>
+
+<!-- Section Range -->
+
+<section class="section-range" id="range">
+
+    <h2 class="titre-exp">Mes compétences</h2>
+
+    <div class="grille-skill">
+        <div class="range-cont">
+            <p class="label-skill">HTML</p>
+            <p class="number-skill">90%</p>
+            <div class="barre-skill b1"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">CSS</p>
+            <p class="number-skill">75%</p>
+            <div class="barre-skill b2"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">JavaScript</p>
+            <p class="number-skill">60%</p>
+            <div class="barre-skill b3"></div>
+            <div class="barre-grises"></div>
+        </div>
+
+        <div class="range-cont">
+            <p class="label-skill">React JS</p>
+            <p class="number-skill">60%</p>
+            <div class="barre-skill b6"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">PHP/Symfony</p>
+            <p class="number-skill">65%</p>
+            <div class="barre-skill b4"></div>
+            <div class="barre-grises"></div>
+        </div>
+        <div class="range-cont">
+            <p class="label-skill">Wordpress</p>
+            <p class="number-skill">50%</p>
+            <div class="barre-skill b5"></div>
+            <div class="barre-grises"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Section expériences -->
+
+<section class="travail-exp" id="exp">
+
+    <h2 class="titre-travail-exp">Mes expériences</h2>
+
+    <div class="cont-exp-travail">
+
+        <div class="barre-verticale">
+            <div class="boule-ico">
+                <img src="ressources/cnrs.jpg" alt="icone gauche">
+            </div>
+            <div class="boule-ico">
+                <img src="ressources/next.jpg" alt="icone gauche">
+            </div>
+            <div class="boule-ico">
+                <img src="ressources/elegance.jpg" alt="icone gauche">
+            </div>
+            <div class="boule-ico">
+                <img src="ressources/poste.jpg" alt="icone gauche">
+            </div>
+            <div class="boule-ico">
+                <img src="ressources/plane.svg" class="avion" alt="icone gauche">
+            </div>
+        </div>
+
+        <div class="flex-cont-bloc-exp">
+
+            <div class="bloc bloc1">
+                <div class="contenu-bloc">
+                    <p class="titre-section-bloc">CNRS de Paris, Stage (Janvier 2021 – Février 2021)</p>
+                    <p class="txt-section">Développement d’une page- Web qui représente un formulaire de tri, en utilisant le HTML5, CSS3, Bootstrap4 coté font-end et le Symfony, PHP en Back-end.</p>
+                </div>
+            </div>
+
+            <div class="bloc bloc2">
+                <div class="contenu-bloc">
+                    <p class="titre-section-bloc">Next-Formation (Septembre 2020) https//www.salah-mk.fr</p>
+                    <p class="txt-section">Lors de mon parcours de formation à Next-Formation j'ai développé mon premier portfolio en utilisant React.js.</p>
+                </div>
+            </div>
+
+            <div class="bloc bloc3">
+                <div class="contenu-bloc">
+                    <p class="titre-section-bloc">Entreprise Elégance à Paris13, (Janvier 2021 – Février 2021)</p>
+                    <p class="txt-section">Parallelement avec mon stage, j'ai pris en freelance un projet d'un site Web E-Commerce d'une boutique de vente en ligne des caftans marocains.</p>
+                </div>
+            </div>
+
+            <div class="bloc bloc4">
+                <div class="contenu-bloc">
+                    <p class="titre-section-bloc">La Poste, 2008-2020</p>
+                    <p class="txt-section">J'ai assuré les operations du guichet et de gestion de courriers au sein du Groupe La Poste à Paris12.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Section Contact -->
+
+<section class="section-contact" id="contact">
+
+    <h2><strong>Contactez</strong> - Moi</h2>
+
+    <div class="container-form">
+
+        <form class="form-bloc">
+
+           
+            <div class="form-groupe">
+                <label for="nom">Nom</label>
+                <input class="nom" type="text" required maxlength="30" id="nom">
+            </div>
+
+            <div class="form-groupe">
+                <label for="email">Email</label>
+                <input class="email" type="email" required maxlength="50" id="email">
+            </div>
+
+            <div class="form-groupe">
+                <textarea class="message" id="txt" placeholder="Votre message" name="" required></textarea>
+            </div>
+
+            <div class="form-groupe">
+                <input type="submit" value="ENVOYER" class="button-sub">
+            </div>
+
+        </form>
+
+    </div>
+
+
+</section>
+
+<footer>
+    Tout Droits réservés &copy;
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
