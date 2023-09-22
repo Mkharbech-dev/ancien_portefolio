@@ -328,26 +328,27 @@
 
     <div class="container-form">
 
-        <form class="form-bloc">
+        <form class="form-bloc" id="my-form" action="https://formspree.io/f/xqkwoakw" method="POST">
 
            
             <div class="form-groupe">
-                <label for="nom">Nom</label>
-                <input class="nom" type="text" required maxlength="30" id="nom">
+                <label for="nom"></label>
+                <input class="nom" name="name" type="text" required maxlength="30" id="nom" placeholder="Nom">
             </div>
 
             <div class="form-groupe">
-                <label for="email">Email</label>
-                <input class="email" type="email" required maxlength="50" id="email">
+                <label for="email"></label>
+                <input class="email" name="_replyto" name="email" placeholder="Email" type="email" required maxlength="50" id="email">
             </div>
 
             <div class="form-groupe">
-                <textarea class="message" id="txt" placeholder="Votre message" name="" required></textarea>
+                <textarea class="message" id="txt" placeholder="Votre message" name="txt" required></textarea>
             </div>
 
             <div class="form-groupe">
                 <input type="submit" value="ENVOYER" class="button-sub">
             </div>
+            <p id="my-form-status" class="status">
 
         </form>
 

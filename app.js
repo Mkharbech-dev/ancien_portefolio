@@ -83,41 +83,29 @@ var firebaseConfig = {
     messagingSenderId: "297197531207",
     appId: "1:297197531207:web:00d583b35f5bd04def8162"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  // Reference contactInfo collections
-
-  let contactInfo = firebase.database().ref("infos");
-
-// Listen for a submit
-document.querySelector(".form-bloc").addEventListener("submit", submitForm);
-
-function submitForm(e) {
-    e.preventDefault();
-    // Get inmput Values
-
-    let nom = document.querySelector(".nom").value;
-    let email = document.querySelector(".email").value;
-    let message = document.querySelector(".message").value;
-    console.log(nom,email,message);
-
-    saveContactInfo(nom,email,message);
-
-    document.querySelector("form-bloc").reset()
-}
-
-//Save infos to Firebase
-
-    function saveContactInfo(nom,email,message){
-        let newContactInfo = contactInfo.push(); 
-        newContactInfo.set({
-            nom:nom,
-            email:email,
-            message:message,
-        }); 
-    }
-
+  var form = document.getElementById("my-form");
+    
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      status.classList.add('success');
+      status.innerHTML = "Merci de m'avoir contacté";
+      form.reset()
+    }).catch(error => {
+      status.classList.add('error');
+      status.innerHTML = "Oops! probleme d'envoi";
+    });
+  }
+  form.addEventListener("submit", handleSubmit) 
+  
 // Anim GSAP + ScrollMagic
 
 const navbar = document.querySelector('.nav-gauche');
